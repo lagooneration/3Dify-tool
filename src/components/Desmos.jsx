@@ -12,6 +12,7 @@ const DesmosCalculator = () => {
             // Initialize the Desmos calculator
             const elt = calculatorRef.current;
             const calculator = Desmos.GraphingCalculator(elt);
+            calculator.setExpression({ id: 'graph1', latex: 'x^{2}-y^{2} = 0.001 x^{3} y^{3}' });
         };
         document.body.appendChild(script);
 
@@ -21,7 +22,7 @@ const DesmosCalculator = () => {
         };
     }, []);
 
-    return <div id="calculator" ref={calculatorRef} style={{ position: 'absolute', top: '60%', margin:'20px', width: '550px', height: '340px', zIndex:'6' }}></div>;
+    return <div id="calculator" ref={calculatorRef} style={{ position: 'absolute', top: '60%', margin: '20px', width: '550px', height: '340px', zIndex: '6' }}></div>;
 };
 
 export default DesmosCalculator;
