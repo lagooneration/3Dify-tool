@@ -1,6 +1,6 @@
 # 3Dify-tool
 
-- Click [here](https://3Dify.netlify.app/) to view the live demo.
+- Click [here](https://3dify-tool.netlify.app/) to view the live demo.
 
 ## Description
 Based on React-Three-Fiber, with this tool you can explore 2D Cartesian equations on a 3D scene. Allowing you to manipulate attributes and the animation functionality will be added later on... (in progress)
